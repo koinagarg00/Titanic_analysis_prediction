@@ -1,44 +1,72 @@
-# 🚢 Titanic Survivor Analytics: End-to-End Data Science & BI Project
+# 🚢 Titanic Survival Prediction
 
-This project explores the Titanic dataset using a full data pipeline — from cleaning and EDA to SQL analysis, Power BI dashboarding, and ML prediction of survival.
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-003B57?style=flat&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-10213F?style=flat&logo=scikit-learn&logoColor=white)
 
-## 🔄 Project Workflow
+---
 
-### 🧹 1. Data Cleaning
-- Handled missing values (Age, Embarked), dropped Cabin.
-- Encoded categorical columns (Sex, Embarked).
+## 📌 Project Overview
 
-### 🧠 2. Feature Engineering
-- *FamilySize* = SibSp + Parch + 1 to represent group travel.
-- *AgeLevel* = Binned age into groups like Child, Teen, Adult, Senior.
-- *FareLevel* = Divided fare into ranges (e.g., Low, Medium,mid_range, High)
+This project aims to predict which passengers survived the Titanic shipwreck using:
+- 🔎 Exploratory Data Analysis (EDA) with rich visualizations
+- 🧠 Machine Learning classification models
+- 📊 Advanced SQL techniques for tabular summarization
+- 📈 An interactive Power BI dashboard powered with **DAX**
 
-### 📊 3. EDA
-- Analyzed survival by gender, class, age level, fare level, and family size.
-- Used visualizations (bar charts, heatmaps, etc.) to identify patterns and outliers.
+---
 
-### 🧮 4. SQL Insights
-- Queried survival by demographics and travel type.
-- Filtered and grouped passengers for quick insights.
+## 📁 Dataset
 
-### 📈 5. Power BI Dashboard
-- Built interactive pages showing survival stats by class, age, gender, and fare.
-- Used slicers and drill-through to connect visuals across slides.
+- Source: [Kaggle - Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic)
+- Size: ~890 rows × 12 columns
 
-### 🤖 6. Machine Learning
-- Trained RandomForestClassifier with GridSearchCV tuning.
-- Evaluated using accuracy, precision, recall, and confusion matrix.
-- Enabled prediction for new passenger input.
+---
 
-## 🛠 Tools Used
-- *Python*: pandas, seaborn, scikit-learn, matplotlib
-- *SQL*
-- *Power BI*
-- *Jupyter Notebook*
+## 🔬 Key Components
 
-## 📌 Dataset
-- [Titanic Dataset – Kaggle](https://www.kaggle.com/competitions/titanic/data)
+### 📊 1. EDA (Exploratory Data Analysis)
+Performed Personal Data Analysis (PDA) using:
+- `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, `Plotly`
+- Outlier detection, missing value treatment
+- Correlation heatmaps, histograms, violin plots, etc.
 
-## ✅ Outcome
-- Complete analysis pipeline combining SQL, ML, and BI tools.
-- Clear visual and predictive insights into Titanic survival patterns.
+> 💡 Visuals made with **Plotly** add interactivity to explore patterns by age, gender, class, etc.
+
+---
+
+### 🛢️ 2. SQL Analysis (Advanced Queries)
+Used **PostgreSQL/MySQL** to dig deeper into dataset using:
+- ✅ `CASE` statements
+- ✅ `PIVOT` tables for categorical breakdowns
+- ✅ `WINDOW` functions (e.g., `ROW_NUMBER()`, `RANK()`)
+- ✅ Subqueries and CTEs for advanced filtering
+
+> 🧠 SQL provided great insight into categorical impacts (e.g., survival by port/class/gender)
+
+---
+
+### 📈 3. Power BI Dashboard (Advanced)
+Created a dynamic dashboard using:
+- Custom **DAX measures**
+- KPI cards, Slicers, Heatmaps
+- Drill-down visuals for class, gender, port
+
+> 💼 Designed for **non-technical stakeholders** to interactively filter and understand survival patterns.
+
+---
+
+### 🤖 4. Machine Learning
+Built predictive models using `Scikit-learn`:
+- Logistic Regression
+- Random Forest Classifier
+- XGBoost (optional)
+- Cross-validation, accuracy, and ROC-AUC scoring
+
+> 🚀 Best performing model achieved ~82% accuracy.
+
+---
+
+
+
