@@ -68,5 +68,9 @@ Built predictive models using `Scikit-learn`:
 
 ---
 
+| **Tags**                                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#Python` `#Pandas` `#EDA` `#DataVisualization` `#SQL` `#MachineLearning` `#Classification` `#SurvivalPrediction` `#DataModeling` `#PowerBI` `#DAX` `#DashboardDesign` `#BusinessIntelligence` `#EndToEndProject` |
+
 
 
